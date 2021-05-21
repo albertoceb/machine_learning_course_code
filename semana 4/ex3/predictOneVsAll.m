@@ -9,6 +9,7 @@ function p = predictOneVsAll(all_theta, X)
 %  for 4 examples) 
 
 m = size(X, 1);
+
 num_labels = size(all_theta, 1);
 
 % You need to return the following variables correctly 
@@ -16,6 +17,10 @@ p = zeros(size(X, 1), 1);
 
 % Add ones to the X data matrix
 X = [ones(m, 1) X];
+Toditito = X*all_theta';
+
+
+[maximos, p] = max(Toditito, [], 2);
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Complete the following code to make predictions using
