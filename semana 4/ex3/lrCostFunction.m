@@ -12,7 +12,7 @@ m = length(y); % number of training examples
 J = 0;
 
 h_theta = sigmoid(X*theta);
-
+y
 
 first_half = -1*(y.*log(h_theta));
 
